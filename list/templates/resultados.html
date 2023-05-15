@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+</head>
+<body>
+    <h1>Resultados de búsqueda</h1>
+    <h2>Palabra clave: {{ palabra_clave }}</h2>
+    <ul>
+        {% for titular in titulares %}
+            <li><a href="#">{{ titular }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
